@@ -31,7 +31,7 @@ const ContactForm = () => {
     
     try {
       // Email JS uses a public key which is safe to include in the client-side code
-      const response = await fetch("https://formsubmit.co/ajax/your-email@example.com", {
+      const response = await fetch("https://formsubmit.co/ajax/info@yapnino.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
