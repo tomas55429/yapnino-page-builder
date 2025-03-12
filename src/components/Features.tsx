@@ -105,7 +105,7 @@ const Features = () => {
           <FeatureCard 
             icon={Clock} 
             title="Fast Turnaround" 
-            description="Get your complete website up and running within 7-10 business days."
+            description="Get your complete website up and running within 48 hours."
             delay={400}
           />
           
