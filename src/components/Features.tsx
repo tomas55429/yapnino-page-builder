@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from "react";
 import { 
   Layout, 
@@ -126,7 +127,7 @@ const Features = () => {
         <div className="mt-10 text-center">
           <div className="inline-flex items-center gap-4 bg-background p-4 rounded-lg border border-border/40 shadow-sm">
             <Sparkles className="text-primary h-6 w-6" />
-            <p className="font-medium">Need additional pages? Add extra pages for just $75 each.</p>
+            <p className="font-medium">Need additional pages? Add extra pages for just $99 each.</p>
           </div>
         </div>
       </div>
