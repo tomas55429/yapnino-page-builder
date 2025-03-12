@@ -9,9 +9,13 @@ const Footer = () => {
       <div className="section-container">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
-            <h3 className="font-bold text-2xl mb-4">
-              yapnino<span className="text-primary">.com</span>
-            </h3>
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/c20a7c1c-e4c3-48f0-af3f-5b59edf1ae83.png" 
+                alt="NINO Web Design & Marketing" 
+                className="h-14 w-auto"
+              />
+            </div>
             <p className="text-muted-foreground mb-6 max-w-md">
               We create beautiful, affordable websites for small businesses. Get your professional online presence without the premium price tag.
             </p>

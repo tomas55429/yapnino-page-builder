@@ -33,9 +33,11 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <span className="font-bold text-2xl tracking-tight">
-            yapnino<span className="text-primary">.com</span>
-          </span>
+          <img 
+            src="/lovable-uploads/c20a7c1c-e4c3-48f0-af3f-5b59edf1ae83.png" 
+            alt="NINO Web Design & Marketing" 
+            className="h-12 w-auto"
+          />
         </a>
 
         {/* Desktop Navigation */}
