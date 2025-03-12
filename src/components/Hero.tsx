@@ -1,7 +1,6 @@
 
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -26,13 +25,10 @@ const Hero = () => {
             Get a professionally designed 4-page website perfect for your small business without breaking the bank. Simple pricing, fast delivery.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in opacity-0" style={{ animationDelay: "0.8s" }}>
+          <div className="flex justify-center animate-fade-in opacity-0" style={{ animationDelay: "0.8s" }}>
             <Button size="lg" className="group text-base" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Start Your Project 
               <ArrowRight className="ml-2 h-4 w-4 transform transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button size="lg" variant="outline" className="text-base" asChild>
-              <Link to="/samples">View Samples</Link>
             </Button>
           </div>
         </div>
