@@ -25,27 +25,58 @@ const ContactForm = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsLoading(false);
+    try {
+      // Email JS uses a public key which is safe to include in the client-side code
+      const response = await fetch("https://formsubmit.co/ajax/your-email@example.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          business: formData.businessName,
+          location: formData.location,
+          message: formData.message,
+          _subject: `New Website Request from ${formData.fullName}`,
+        }),
+      });
+      
+      const data = await response.json();
+      
+      if (data.success) {
+        toast({
+          title: "Form submitted successfully!",
+          description: "We'll get back to you as soon as possible.",
+        });
+        
+        // Reset form
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          businessName: "",
+          location: "",
+          message: "",
+        });
+      } else {
+        throw new Error("Something went wrong");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
       toast({
-        title: "Form submitted successfully!",
-        description: "We'll get back to you as soon as possible.",
+        title: "Form submission failed",
+        description: "Please try again later or contact us directly.",
+        variant: "destructive",
       });
-      // Reset form
-      setFormData({
-        fullName: "",
-        email: "",
-        phone: "",
-        businessName: "",
-        location: "",
-        message: "",
-      });
-    }, 1500);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
