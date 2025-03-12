@@ -1,6 +1,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -30,8 +31,8 @@ const Hero = () => {
               Start Your Project 
               <ArrowRight className="ml-2 h-4 w-4 transform transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button size="lg" variant="outline" className="text-base">
-              View Samples
+            <Button size="lg" variant="outline" className="text-base" asChild>
+              <Link to="/samples">View Samples</Link>
             </Button>
           </div>
         </div>
