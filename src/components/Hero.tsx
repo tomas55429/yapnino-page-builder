@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative pt-32 pb-16 overflow-hidden">
+    <section className="relative pt-24 pb-8 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid -z-10"></div>
       <div className="absolute top-1/4 left-[15%] w-72 h-72 bg-primary/10 rounded-full blur-3xl -z-10"></div>

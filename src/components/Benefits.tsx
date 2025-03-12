@@ -53,7 +53,7 @@ const BenefitItem = ({
 
 const Benefits = () => {
   return (
-    <section id="benefits" className="py-20 relative bg-accent/30">
+    <section id="benefits" className="py-12 relative bg-accent/30">
       <div className="section-container">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <div>

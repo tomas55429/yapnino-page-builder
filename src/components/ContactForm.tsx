@@ -49,12 +49,12 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-20 relative">
+    <section id="contact" className="py-12 relative">
       <div className="absolute inset-0 bg-gradient-to-t from-transparent to-secondary/20 -z-10"></div>
       
       <div className="section-container">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-10">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Get Started?</h2>
             <p className="text-lg text-muted-foreground">
               Fill out the form below and we'll get back to you within 24 hours to discuss your project.

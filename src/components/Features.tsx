@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import { 
   Layout, 
@@ -69,11 +68,11 @@ const FeatureCard = ({
 
 const Features = () => {
   return (
-    <section id="features" className="py-20 relative">
+    <section id="features" className="py-12 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-secondary/30 -z-10"></div>
       
       <div className="section-container">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">All-Inclusive Web Design Package</h2>
           <p className="text-lg text-muted-foreground">
             Everything you need to establish your online presence for just $399
@@ -124,7 +123,7 @@ const Features = () => {
           />
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-10 text-center">
           <div className="inline-flex items-center gap-4 bg-background p-4 rounded-lg border border-border/40 shadow-sm">
             <Sparkles className="text-primary h-6 w-6" />
             <p className="font-medium">Need additional pages? Add extra pages for just $75 each.</p>
